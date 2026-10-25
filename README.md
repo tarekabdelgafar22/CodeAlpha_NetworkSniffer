@@ -23,9 +23,4 @@ Press Ctrl + C to stop.
 To capture one protocol only, edit this line in sniffer.py:
 
 FILTER_PROTOCOL = "tcp"   # "tcp", "udp", "icmp", or None for all
-Example Output
-Captured on Kali Linux:
-
-Sniffer Output
-
-Sample packet:
+![Output Screenshot](output.png)
