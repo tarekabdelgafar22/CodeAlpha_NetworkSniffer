@@ -29,27 +29,3 @@ Captured on Kali Linux:
 Sniffer Output
 
 Sample packet:
-
-============================================================
-Packet Number    : 3
-Timestamp        : 2026-10-23 21:05:07
-Source IP        : 192.168.1.5
-Destination IP   : 51.178.91.234
-Protocol         : TCP
-Source Port      : 48526
-Destination Port : 443
-Note: Payloads on port 443 look like random characters because the traffic is encrypted (HTTPS/QUIC). The sniffer sees the headers, but not the encrypted content.
-
-How It Works
-sniff() captures packets and passes each one to packet_callback.
-Non-IP packets are skipped.
-The IP layer gives the addresses and the protocol number, which is mapped to a name.
-The TCP/UDP layers give the ports.
-The Raw layer gives the payload, decoded as text.
-What I Learned
-How data moves through the network as layered packets
-The structure of IP, TCP, and UDP headers
-Reading and filtering live traffic with Scapy
-Why encrypted traffic hides its payload from a sniffer
-Disclaimer
-For educational purposes only. Capture traffic only on networks you own or have permission to monitor.
